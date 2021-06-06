@@ -16,6 +16,7 @@
     
     .container {
         display: flex;
+        justify-content: center;
         
     }
     .card {
@@ -30,15 +31,25 @@
         text-align: center;
         margin-top: 20px;
         margin-bottom: 50px;
+        
+    }
+    h1{
+        font-size: 100px;
+    }
+    .addCSS{
+        box-shadow: 0px 10px 10px 10px red;
+    }
+    .removeCSS{
+        box-shadow: none;
     }
 </style>
-<body>
+<body   >
     <div class="heading">
         <h1>NEWS</h1>
     </div>
-    <div class="container">
+    <div class="container" >
         
-    <div class="card"  class="card text-center" >
+    <div class="card"  class="card text-center" class="bg-image hover-zoom">
         <img src="data:image/png;base64,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" class="card-img-top">
         <div class="card-body" class="card text-center">
             <h5 class="card-title" class="card text-center">IndiaToday</h5></div>
@@ -63,13 +74,105 @@
             <h5 class="card-title" class="card text-center">Tez</h5></div>
             <a href="https://feeds.intoday.in/livetv/?id=livetv-tez&aud_togle=1&autostart=1&utm_medium=web&utm_source=live_tv_page&v=1.4" class="btn btn-primary">Watch live</a>
 
+    </div>
 
-
-
-
-
+    <div  class="card"  class="card text-center" >
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAkFBMVEWYIxr///+SAADexcOUDQDbvbvQq6rsHSSVFwn+/PyOAADNoZ/Mn5y5dXKyaGTt4N+XHxWWGxD69fWiQTvhysm9hoOpVE/v4+PXtbPfw8H37+7+8PC+hIGbKSC7fnvEkI2kR0GfNi+nTkj95+jxYGPrERrq19bsAAqvYV3xb3LsFR3tHibrBhPydnmxZmKwbGiYj5SmAAADCElEQVR4nO3Za1PiMACF4TYEqeAlhaogK5dFEF3R///vFppL01Bdp+PuauZ9PkGGifbMCWlJkgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4ajKhSamOR/NEipZk+IfMTCoc/5ayq6JTOvlxV11SNitHi2tx0mmnmAe5mZmKRRS5yZPUGeeZHR3okYv+TdrWXS2f/FqP3oj/cJGfz48tHS5MblVsl61jG9cCEoWZMWv6L76dWmxpOsr16CfEli69uuU/9dhlHGULY7vVl/UpsU28iGzZXuIoWxhbOiivNYxt2K0Up+ajGzdksrVvx+YTi9z+ldjK5mK7sWFkh6UVxrbp+/cWXZOSHeyfle9PRf19WriQYiubi+1CmMoMDjcO4U5aa4kSQ520HZQmNpeJ+UB6beqWL0zZ+v/suv4yG9u5zPWL0yq21f3T+n51vLjERK/cN2OTc7OMTUyRbaOJF1smTMPOpIlt9bDu9dYP0+PYun+IzdVtW9YtH8VWNi82pVKXRhnb43Nv7/nxzdjsc8BxbHLmByU6sZXNi23/+KNfXkkd21NPaxFb0r/Vc73ux1R8ZfNjU3f65f7ezY/tV4tFmmSveq7DthFh2fzYEjHWr2eyjG2nF+muTWyJ3Zhn0pUtlnu2Az82tbR1K7eH6Xqf2/O6YUuYuCbpORpiy7duLv3peO7ZDvzYbI3Sjr5hne566930qClK6C+uznuxJWJjvimXEZatHptdT+nQfqOb2936U4JZy/N3toTqeeq2G2HZ6rHZ5ec0PpOae7LqB7XG2NxOEGPZgtjsZhrG1qTrgmiOzVW3tI2qbEFsiXz5aGzDzP2c1hyb+6aMsGxhbIk4/1hsw2VezdEcm1/dbZ5EJYwtkaONH9sbZwlj6eVgfy8J16Fwv+VtIiubPbkqqjooMZqPzfFT48lVd/Ca1c7tzDnXJGyUUuZUrIitbN6JaEW5w9Hmc1KZqcY5juZW1TwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvqrfYKEpc6s3FHcAAAAASUVORK5CYII=" class="card-img-top">
+    
+        <div class="card-body" class="card text-center">
+            <h5 class="card-title" class="card text-center"><br>NDTV</h5></div>
+            <a href="https://www.youtube.com/watch?v=MN8p-Vrn6G0" class="btn btn-primary">Watch live</a>
 
     </div>
+
+    
+
     </div>
+    <script>
+    let test = document.querySelectorAll(".card");
+    console.log(test);
+    test.forEach(function(elem){
+        elem.addEventListener("mouseenter",function(){
+            elem.classList.add("addCSS");
+        });
+        elem.addEventListener("mouseleave",function(){
+            elem.classList.remove("addCSS");
+        });
+            
+        });
+    
+
+    //
+       
+     //  function hell(){
+      // let test = document.getElementsByClassName("card");
+       // console.log(test);
+        
+        
+       // for (let i = 0; i < test.length; i++) {
+     //       test[i].addEventListener("mouseenter",myfun);
+            //
+     //   }
+    //    for (let i = 0; i < test.length; i++) {
+
+       // test[i].addEventListener("mouseleave",myfu(){};
+   // }}
+    //function myfun(){
+     //   let test = document.getElementsByClassName("card");
+      //  for (let i = 0; i < test.length; i++) {
+      //  test[i].classList.add("addCSS");}}
+      //  while(i<test.length){ 
+//test[i].addEventListener("mouseenter", mouseEnter);
+//test[i].addEventListener("mouseleave", mouseLeave);
+//i++;
+   //     }
+
+
+
+//function mouseEnter() {
+ // document.getElementsByClassName("card").classList.add("addCSS") ;
+//}
+
+//function mouseLeave() {
+ // document.getElementsByClassName("card").classList.add("removeCSS") ;
+//}
+      //  function hell(){
+      //  let test = document.getElementsByClassName("card");
+       //console.log(test.length);
+      // for (i=0;i<test.length;++i){
+      //  test[i].classList.add("addCSS");
+     //  }
+   // }
+      // test[].addEventListener("mouseenter",myfun);
+     //  function myfun () {
+         //  for(i=0;i<test.length;++i){
+         //      test[i].classList.add("addCSS");
+           
+       
+      //  }
+      // test.onmouseenter="myfun()";
+       // console.log(test);
+     //  function myfun(){
+//test.addclassList.add("addCSS");
+       // };
+        //   while(){
+        //for(let i=0;i<4;++i){
+      //  let test = document.getElementsByClassName("card")[i];
+      //  console.log(test);
+     //   test.addEventListener("mouseenter", function mouseOver(){
+       //     test.classList.add("addCSS");});
+      //      test.addEventListener("mouseleave", function mouseOut(){test.classList.add("removeCSS");});
+            
+        
+    //}} ;
+    
+    
+    //document.getElementById("demo").addEventListener("mouseout", mouseOut);
+    
+   // function mouseOver() {
+      // let best = document.getElemenstByClassName("card");
+    // }
+    </script>
+    
 </body>
 </html>
